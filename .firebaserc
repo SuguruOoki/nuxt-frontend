@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev": "development-sample",
+    "prd": "production-sample"
+  }
+}
