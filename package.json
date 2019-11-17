@@ -1,19 +1,19 @@
 {
   "private": true,
   "name": "sample",
-  "description": "",
+  "description": "description",
   "scripts": {
     "serve": "nuxt-ts",
     "build": "nuxt-ts build",
     "build:stg": "cross-env NODE_ENV=staging nuxt-ts build",
-    "build:prd": "cross-env API_ENDPOINT=[production api endpoint] FIREBASE_API_KEY=[firebase production apikey] FIREBASE_PROJECT_ID=[firebase project id] nuxt-ts build",
+    "build:prd": "cross-env API_ENDPOINT=productionapiendpoint FIREBASE_API_KEY=firebaseproductionapikey FIREBASE_PROJECT_ID=firebaseprojectid nuxt-ts build",
     "codegen": "vuex-guardian",
     "dev": "concurrently --prefix-colors \"green,blue\" \"yarn:serve\" \"yarn:codegen\"",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "test": "jest --config jest.config.js --verbose",
-    "format": "prettier-eslint --write \"./**/*.{js,ts,vue}\" --ignore \"./node_modules/**\"",
+    "format": "prettier-eslint --write \"./**/*.{js,ts,vue}\" --ignore \"./node_modules/**\""
   },
   "husky": {
     "hooks": {
